@@ -11,19 +11,19 @@ import EventBinding from "./Component/EventBinding";
 function App (){
 return (
    <div className="App">
-    {/* <Message /> */}
-    {/* <Navbar /> */}
-    {/* <Functional /> */}
-    {/* <Hi /> */}
-    {/* <Wellcome /> */}
-    {/* <Fullname  name="Henok " Age="20">
+    <Message />
+    <Navbar />
+    <Functional />
+    <Hi />
+    <Wellcome />
+    <Fullname  name="Henok " Age="20">
         <p>This is Henok's information.</p>
         <button>click me</button>
     </Fullname>
     <Fullname name="John " Age="30"/>
-    <Fullname name="Jane " Age="28"/> */}
-{/* <Subscribe /> */}
-    {/* <EventFun /> */}
+    <Fullname name="Jane " Age="28"/>
+<Subscribe />
+    <EventFun />
     <EventClass />
     <EventBinding />
 </div>
