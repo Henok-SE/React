@@ -8,9 +8,33 @@ import Subscribe from "./Component/state";
 import EventFun from "./Component/EventFun";
 import EventClass from "./Component/EventClass";
 import EventBinding from "./Component/EventBinding";
+import Forms from "./Component/forms";
+import { BrowserRouter as Router, Routes, Route, Link  } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 function App (){
 return (
    <div className="App">
+      <Router>
+        <nav> 
+            <ul>
+                <li>
+                    <Link to="/">Home</Link>
+                   <Link to="/about">About</Link>
+                 <Link to="/contact">Contact</Link>
+                </li>
+            </ul>
+        </nav>
+        <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="/about" element={<About />}/>
+            <Route path="/contact" element={<Contact />}/>
+            <Route path="*" element={<h1>404 Not Found</h1>
+            }/>
+        </Routes>
+      </Router>
+    <Forms />
     <Message />
     <Navbar />
     <Functional />
