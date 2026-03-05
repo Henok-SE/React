@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route, Link  } from "react-router-dom"
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import UseStatecounter from "./Component/Hooks/useState";
 function App (){
 return (
    <div className="App">
@@ -34,7 +35,8 @@ return (
             }/>
         </Routes>
       </Router>
-    <Forms />
+      <UseStatecounter />
+    {/* <Forms />
     <Message />
     <Navbar />
     <Functional />
@@ -49,7 +51,7 @@ return (
 <Subscribe />
     <EventFun />
     <EventClass />
-    <EventBinding />
+    <EventBinding /> */}
 </div>
 ); 
 }
