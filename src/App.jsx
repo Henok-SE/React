@@ -36,7 +36,7 @@ return (
         </Routes>
       </Router>
       <UseStatecounter />
-    {/* <Forms />
+    <Forms />
     <Message />
     <Navbar />
     <Functional />
@@ -51,7 +51,7 @@ return (
 <Subscribe />
     <EventFun />
     <EventClass />
-    <EventBinding /> */}
+    <EventBinding />
 </div>
 ); 
 }
