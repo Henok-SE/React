@@ -14,6 +14,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import UseStatecounter from "./Component/Hooks/useState";
+import UseStateObj from "./Component/Hooks/useStateObj";
 function App (){
 return (
    <div className="App">
@@ -36,7 +37,7 @@ return (
         </Routes>
       </Router>
       <UseStatecounter />
-    <Forms />
+    {/* <Forms />
     <Message />
     <Navbar />
     <Functional />
@@ -48,10 +49,11 @@ return (
     </Fullname>
     <Fullname name="John " Age="30"/>
     <Fullname name="Jane " Age="28"/>
-<Subscribe />
+    <Subscribe />
     <EventFun />
     <EventClass />
-    <EventBinding />
+    <EventBinding /> */}
+    <UseStateObj />
 </div>
 ); 
 }
