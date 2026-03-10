@@ -17,7 +17,8 @@ function UseStateObj() {
       </form>
       <button id="toggle-btn" onClick={()=>setVisible(!isVisible)}>Message</button>
        {isVisible &&  <p> I love coding </p>}
-       <input type="color" name="new" id="color-input" />
+       {/* // color input with inital value */}
+      
 
     </div>
   )

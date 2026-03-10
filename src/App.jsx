@@ -15,6 +15,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import UseStatecounter from "./Component/Hooks/useState";
 import UseStateObj from "./Component/Hooks/useStateObj";
+import { ColorPicker } from "./Component/Hooks/colorpicker";
 function App (){
 return (
    <div className="App">
@@ -54,6 +55,7 @@ return (
     <EventClass />
     <EventBinding /> */}
     <UseStateObj />
+    <ColorPicker />
 </div>
 ); 
 }
