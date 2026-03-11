@@ -12,4 +12,3 @@ export const ColorPicker = () => {
        </div>
      );
 };
- 
