@@ -16,6 +16,7 @@ import Contact from "./pages/Contact";
 import UseStatecounter from "./Component/Hooks/useState";
 import UseStateObj from "./Component/Hooks/useStateObj";
 import { ColorPicker } from "./Component/Hooks/colorpicker";
+import { FruitsSearch } from "./Component/Hooks/FruitSearchApp";
 function App (){
 
     function useDebounce(value, delay) {
@@ -75,6 +76,8 @@ return (
     <EventBinding /> */}
     <UseStateObj />
     <ColorPicker />
+    {/* <FootballerSearch /> */}
+    <FruitsSearch />
 </div>
 ); 
 }
