@@ -17,6 +17,25 @@ import UseStatecounter from "./Component/Hooks/useState";
 import UseStateObj from "./Component/Hooks/useStateObj";
 import { ColorPicker } from "./Component/Hooks/colorpicker";
 function App (){
+
+    function useDebounce(value, delay) {
+  const [debouncedValue, setDebouncedValue] = useState(value);
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
+
+    return () => {
+      clearTimeout(handler);
+    };
+  }, [value, delay]);
+
+  return debouncedValue;
+}
+
+// export { useDebounce };
+
 return (
    <div className="App">
       <Router>
